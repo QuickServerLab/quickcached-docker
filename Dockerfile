@@ -5,7 +5,7 @@ FROM akshathkumar/ubuntu1604-java8
 # Author
 MAINTAINER Akshathkumar Shetty
 
-ENV QUICKCACHED_VERSION 2.0.1
+ENV QUICKCACHED_VERSION 2.0.2
 
 RUN apt-get -y install unzip
 
@@ -22,7 +22,7 @@ rm -rf /opt/quickcached/__MACOSX && \
 rm -rf /opt/quickcached/libtest && \
 rm /opt/quickcached/build.xml
 
-#ENV JAVA_OPTS="-Xms1024m -Xmx1024m"
+#ENV QUICKCACHED_OPTS="-Xms1024m -Xmx1024m"
 ENV QUICKCACHED_HOME /opt/quickcached
 ENV PATH $PATH:$QUICKCACHED_HOME
 
